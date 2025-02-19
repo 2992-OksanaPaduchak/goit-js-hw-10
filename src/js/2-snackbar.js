@@ -41,7 +41,7 @@ form.addEventListener('submit', (evt) => {
       });
     });
     .catch (() => {
-    const message = `❌ Rejected promise in ${delay}ms`;
+    const message = `Rejected promise in ${delay}ms`;
     console.log(message);
     iziToast.show({
       message,
