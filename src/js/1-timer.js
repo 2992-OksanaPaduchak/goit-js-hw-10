@@ -45,8 +45,8 @@ function tick() {
   const { days, hours, minutes, seconds } = convertMs(ms);
   timeElement(days, hours, minutes, seconds);
   if (ms <= 0) {
-      refs.startBtn.disabled = false;
-      refs.dataInput.disabled = true;
+      refs.startBtn.disabled = true;
+      refs.dataInput.disabled = false;
       clearInterval(intervalTime);
       timeElement(0, 0, 0, 0);
   }
@@ -101,3 +101,4 @@ function onCloseDatePicker(selectedDate) {
     refs.startBtn.disabled = false;
   }
 };
+
